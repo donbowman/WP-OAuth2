@@ -17,5 +17,8 @@ There are many other such plugins available for Wordpress.
 The main difference here is there is no external service / SaaS component:
 it entirely operates within your own site.
 
+Source code is on [github](https://github.com/donbowman/WP-OAuth2).
+Issues and Pull Requests on [github](https://github.com/donbowman/WP-OAuth2)
+
 This is released under GPLv2 and is free (as in speech and also as in
 beer). There is no 'premium' version.
