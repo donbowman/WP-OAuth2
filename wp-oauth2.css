@@ -1,0 +1,137 @@
+/*  GENERAL
+===========*/
+body.wpoa2-lightbox-visible {overflow:hidden;}
+#wpoa2-lightbox {display:none; position:fixed; z-index:99999; width:100%; height:100%; background:rgba(0,0,0,0.8); overflow:scroll; padding:10% 20%; box-sizing:border-box;}
+#wpoa2-login-form-design-form {display:none;}
+
+#wpoa2-result {display:none;}
+.wpoa2-login-message{text-align:center; left:0; right:0; top:5px; position:absolute; font-size:1em; z-index:999999;}
+.wpoa2-login-message span {padding:4px 6px; background:#fff; color:#000; border-radius:5px; display:inline-block;}
+
+/*  SETTINGS PAGE
+=================*/
+#wpoa2-measurements {margin-bottom:5px;}
+.wpoa2-measurement {background:#ccc; border-radius:5px;}
+.wpoa2-measurement-label {margin-top:1em; margin-bottom:0.25em;}
+.wpoa2-measurement-rating {padding:3px; background:#2EA2CC; border-radius:5px; -webkit-transition:all 1s ease;}
+
+#wpoa2_login_redirect_page {display:none;}
+#wpoa2_logout_redirect_page {display:none;}
+
+#wpoa2-settings-meta {float:right; text-align:right; color:#999; padding-top:9px;}
+#wpoa2-settings-meta ul {display:inline; margin-left:0;}
+#wpoa2-settings-meta li {display:inline; margin-left:0.5em;}
+
+#wpoa2-rate-5stars {}
+#wpoa2-rate-5stars:hover {}
+
+#wpoa2-logo {margin-left:0.5em; margin-bottom:0.5em; width:64px; height:64px; float:right; background-image:url(WP-OAuth2-icon.png);}
+
+#wpoa2-settings-col1 {width:68%; float:left;}
+#wpoa2-settings-col2 {width:30%; float:right;}
+
+#wpoa2-settings-header {margin-top:1em;}
+#wpoa2-settings-header nav ul {display:inline; margin-left:0;}
+#wpoa2-settings-header nav li {display:inline; margin-bottom:-1px;}
+#wpoa2-settings-header nav li:after {content:' | ';}
+#wpoa2-settings-header nav li:first-child {margin-top:0.5em;}
+#wpoa2-settings-header nav li:last-child:after {content:none;}
+#wpoa2-settings-header .nav-splitter {display:inline; margin-left:1em;}
+@media all and (max-width:720px) {
+	#wpoa2-settings-header nav {margin-top:0.5em;}
+	#wpoa2-settings-header nav ul {display:block; margin-top:0; border:0 solid rgba(0,0,0,0.1); border-width:0 0 1px 1px;}
+	#wpoa2-settings-header nav li {display:block; text-align:center; border:0 solid rgba(0,0,0,0.1); border-width:1px 1px 0 0; box-sizing:border-box;}
+	#wpoa2-settings-header nav li:after {content:none;}
+	#wpoa2-settings-header nav a {display:block; text-align:center; padding:0.25em; text-decoration:none;}
+	#wpoa2-settings-header nav li:hover {background:rgba(0,0,0,0.05);}
+	#wpoa2-settings-header .nav-splitter {display:none;}
+	#wpoa2-settings-col1 {width:auto; float:none;}
+	#wpoa2-settings-col2 {width:auto; float:none;}
+}
+
+#wpoa2-plugin-info {margin-bottom:1em; background-color:#fff9d8; padding-left:1em; padding-right:1em; border-radius:1em; border:1px solid #e7dca4;}
+#wpoa2-plugin-info nav {margin-top:0.5em; margin-bottom:0.25em;}
+#wpoa2-plugin-info nav + nav {margin-top:0.25em; margin-bottom:0.5em;}
+#wpoa2-plugin-info #paypal-button {display:inline-block; vertical-align:middle;}
+#wpoa2-plugin-info #paypal-button input {padding:0;}
+#wpoa2-paypal-button {float:right;}
+
+.wpoa2-settings-section {background-color:#fff; margin-bottom:1.5em; border:1px solid #ddd;}
+#wpoa2-settings-intro {border-radius:15px; text-align:center;}
+#wpoa2-settings-intro nav {margin-top:0.5em; margin-bottom:0.5em;}
+#wpoa2-settings-intro nav + nav {padding-top:0.5em; margin-bottom:0.5em; border-top:1px solid #eee;}
+
+.wpoa2-settings div {box-sizing:border-box;}
+.wpoa2-settings .submit {padding:0;}
+.wpoa2-settings .form-table {margin-top:0;}
+.wpoa2-settings .form-padding {padding:0 1em 1em 1em; position:relative; z-index:1;}
+.wpoa2-settings ul {list-style:inherit; margin-left:2em;}
+.wpoa2-settings h3 {margin:0; cursor:pointer; color:#999; padding:0.5em; font-style:italic; text-transform:uppercase; border-bottom:1px solid #eee; font-size:1.5em; -webkit-transition:all 0.5s ease;}
+.wpoa2-settings h3:hover {color:#000;}
+.wpoa2-settings h4 {margin:0; color:#999; font-size:1.1em; font-style:italic; text-transform:uppercase; border-bottom:1px solid #eee; padding-bottom:5px;}
+.wpoa2-settings hr {border:0; margin-bottom:1em;}
+.wpoa2-settings input[type=text],
+.wpoa2-settings input[type=checkbox],
+.wpoa2-settings input[type=radio],
+.wpoa2-settings select,
+.wpoa2-settings textarea {margin:0;}
+.wpoa2-settings select {min-width:150px;}
+.wpoa2-settings .tip-button {text-decoration:none; opacity:0; transition:all 0.5s ease;}
+.wpoa2-settings tr:hover .tip-button {opacity:1;}
+.wpoa2-settings .has-tip:hover .tip-button {opacity:1;}
+.wpoa2-settings .form-table td {vertical-align:top;}
+.wpoa2-settings .form-table th {padding-top:1em; padding-bottom:0.25em;}
+.wpoa2-settings .form-table th .heading {}
+.wpoa2-settings .form-table td {padding-top:1em; padding-bottom:0.25em;}
+.wpoa2-settings .tip-message {display:none; font-size:0.8em; color:#aaa; border-radius:3px;}
+.wpoa2-settings .tip-message.tip-warning {padding:1em; background:#fffd6c; color:#000;}
+.wpoa2-settings .tip-message.tip-info {padding:1em; background:#ddeeff; color:#000;}
+
+.wpoa2-settings .validation-warning {font-size:0.8em; padding:1em; background:#ff0000; color:#fff;}
+
+/*  LOGIN FORM STYLES
+=====================*/
+#wpoa2-title {font-size: 1em; margin-bottom:0.5em;}
+.wpoa2-login-form {margin-bottom:1em;}
+.wpoa2-login-button:focus {outline:0; background-color:#ddd;}
+.wpoa2-logout-button:focus {outline:0; background-color:#ddd;}
+.wpoa2-login-button .icon {vertical-align:middle; margin-left:0.25em; margin-right:0.25em; height:32px;}
+
+/* title / button alignment */
+.wpoa2-layout-align-left {}
+.wpoa2-layout-align-left #wpoa2-title {text-align:left;}
+.wpoa2-layout-align-left nav {text-align:left;}
+.wpoa2-layout-align-center{}
+.wpoa2-layout-align-center #wpoa2-title {text-align:center;}
+.wpoa2-layout-align-center nav {text-align:center;}
+.wpoa2-layout-align-right {}
+.wpoa2-layout-align-right #wpoa2-title {text-align:right;}
+.wpoa2-layout-align-right nav {text-align:right;}
+
+/* links-row layout */
+.wpoa2-layout-links-row {}
+.wpoa2-layout-links-row a {display:inline; margin-right:0.5em;}
+
+/* links-column layout */
+.wpoa2-layout-links-column {}
+.wpoa2-layout-links-column a {display:inline; margin-bottom:1px;}
+.wpoa2-layout-links-column a:after {content:"\A"; white-space:pre;} /* insert a break to convert the row into a column */
+
+/* buttons-row layout */
+.wpoa2-layout-buttons-row {}
+.wpoa2-layout-buttons-row a {border:2px solid transparent; box-sizing:border-box; display:inline-block; text-decoration:none; text-align:center; font-size:1em; padding:10px; background:#1e8cbe; color:#fff; margin-bottom:1px; margin-right:1px; -webkit-transition:all 0.5s ease; cursor:pointer;}
+.wpoa2-layout-buttons-row a:hover {background:#c5c5c5;}
+.wpoa2-layout-buttons-row a.loading{background:transparent !important; color:#999; cursor:default; border:2px solid #000;}
+.wpoa2-layout-buttons-row a.loading-other{background:rgba(255,255,255,0) !important; color:#999; cursor:default;}
+
+/* buttons-column layout */
+.wpoa2-layout-buttons-column {}
+.wpoa2-layout-buttons-column a {border:2px solid transparent; box-sizing:border-box; display:block; text-decoration:none; text-align:center; font-size:1em; padding:10px; background:#1e8cbe; color:#fff; margin-bottom:1px; -webkit-transition:all 0.5s ease; cursor:pointer;}
+.wpoa2-layout-buttons-column a:hover {background:#c5c5c5;}
+.wpoa2-layout-buttons-column a:hover .icon {}
+.wpoa2-layout-buttons-column a.loading{background:transparent !important; color:#999; cursor:default; border:2px solid #000;}
+.wpoa2-layout-buttons-column a.loading-other{background:rgba(255,255,255,0) !important; color:#999; cursor:default;}
+
+/*  LINK-UNLINK PROVIDERS FORM STYLES
+=====================================*/
+.wpoa2-linked-accounts {font-weight:bold;}
